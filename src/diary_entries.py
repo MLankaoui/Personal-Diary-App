@@ -7,7 +7,7 @@ def new_diary(filename, path, content):
 
 
     content = input("please put here your content : ")
-    path = input("enter the directory where you want to put your want to save the file")
+    path = input("enter the directory where you want to put your want to save the file : ")
 
     if not os.path.exists(path):
         print("directory doesn't exist")
