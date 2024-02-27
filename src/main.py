@@ -3,7 +3,6 @@ import diary_entries, search_entries
 
 file = ""
 path = ""
-content = ""
 def main():
     print("welcome to the personal diary app")
 
@@ -42,6 +41,6 @@ def options(name):
 4) editing a diaryss""")
     option = int(input("> your option here : "))
     if (option == 1):
-        diary_entries.new_diary(file, path, content)
+        diary_entries.new_diary(file, path)
 
 main()

@@ -1,21 +1,31 @@
 import os
 from datetime import datetime
 
-def new_diary(filename, path, content):
-    print("please enter a file name were you want everything to be inserted : ")
-    filename = input("> your file name here : ")
+def new_diary(filename, path):
+    filename = input("Please enter a file name where you want everything to be inserted: ")
 
+    print("Please put your content!")
 
-    content = input("please put here your content : ")
-    path = input("enter the directory where you want to put your want to save the file : ")
+    lines = []
+
+    while True:
+        user_input = input()
+
+        # If user pressed Enter without a value, break out of loop
+        if user_input == '':
+            break
+        else:
+            lines.append(user_input + '\n')
+
+    path = input("Enter the directory where you want to save the file: ")
 
     if not os.path.exists(path):
-        print("directory doesn't exist")
-        return
-    
+        print("Directory doesn't exist. Creating directory.")
+        os.makedirs(path)
+
     time_now = datetime.now()
 
     timestamp = time_now.strftime("%Y-%m-%d_%H-%M-%S")
 
-    with open(f"{path}/{timestamp}.txt", "w") as filename:
-        filename.write(content)
+    with open(f"{path}/{filename}_{timestamp}.txt", "w") as file:
+        file.write(''.join(lines))
