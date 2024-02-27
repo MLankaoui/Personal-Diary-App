@@ -3,13 +3,14 @@ import diary_entries, search_entries
 
 file = ""
 path = ""
+
+
 def main():
     print("welcome to the personal diary app")
 
     print("============================")
 
     name = input("please enter your name : ")
-    
 
     greetings(name)
 
@@ -40,7 +41,10 @@ def options(name):
 3) reviewing a diary
 4) editing a diaryss""")
     option = int(input("> your option here : "))
-    if (option == 1):
+    if option == 1:
         diary_entries.new_diary(file, path)
+
+    elif option == 3:
+        search_entries.review_diary(file, path)
 
 main()
