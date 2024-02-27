@@ -1,11 +1,16 @@
 import diary_entries, search_entries
 
+
+file = ""
+path = ""
+content = ""
 def main():
     print("welcome to the personal diary app")
 
     print("============================")
 
     name = input("please enter your name : ")
+    
 
     greetings(name)
 
@@ -13,9 +18,8 @@ def main():
 
     user_option = options(name)
 
-    if (user_option == 1):
-        pass #just for now
-    elif (user_option == 2):
+    
+    '''elif (user_option == 2):
         pass
 
     elif (user_option == 3):
@@ -25,7 +29,7 @@ def main():
         pass
 
     else:
-        print('not a valid option')
+        print('not a valid option')'''
 def greetings(name):
     print(f"hello mr {name} and welcome!")
 
@@ -39,6 +43,7 @@ def options(name):
 3) reviewing a diary
 4) editing a diaryss""")
     option = int(input("> your option here : "))
-    return (option)
+    if (option == 1):
+        diary_entries.new_diary(file, path, content)
 
 main()
