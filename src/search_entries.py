@@ -1,6 +1,5 @@
 import os
-from tkinter import *
-from tkinter import ttk
+
 
 def review_diary(filename, path):
     path = input("> please enter your file path : ")
