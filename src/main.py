@@ -1,3 +1,5 @@
+import diary_entries, search_entries
+
 def main():
     print("welcome to the personal diary app")
 

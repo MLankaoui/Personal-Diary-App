@@ -1,2 +1,2 @@
-def create_new_diary(filename, content):
+def new_diary(filename, path, content):
     
