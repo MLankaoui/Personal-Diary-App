@@ -29,13 +29,13 @@ def options(name):
 3) editing a diary""")
     option = int(input("> your option here : "))
     if option == 1:
-        diary_entries.new_diary(file, path)
+        diary_entries.new_diary()
 
 
     elif option == 2:
         search_entries.review_diary(file, path)
 
     elif option == 3:
-        diary_entries.edit_diary(file,path)
+        diary_entries.edit_diary()
 
 main()
