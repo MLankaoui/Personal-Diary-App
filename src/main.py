@@ -16,8 +16,6 @@ def main():
 
     options(name)
 
-    user_option = options(name)
-
     
     '''elif (user_option == 2):
         pass
