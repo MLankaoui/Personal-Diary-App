@@ -20,10 +20,22 @@ These instructions will get you a copy of the project up and running on your loc
 Run the `main.py` script in your Python environment to start the application.
 
 ```bash
-python main.py
+git clone https://github.com/MLankaoui/Personal-Diary-App.git
+cd Personal-Diary-App/src
+python main.py 
+
+```
 
 1. The application will prompt you to enter your name and then present you with three options:
 2. Writing a new diary entry.
 3. a diary entry.
 4. diary entry.
 5. the option that suits your needs.
+
+## Modules
+
+The application consists of three main modules:
+
+> main.py: This is the entry point of the application.
+> diary_entries.py: This module contains the functions for creating and editing diary entries.
+> search_entries.py: This module contains the function for reviewing a diary entry.
