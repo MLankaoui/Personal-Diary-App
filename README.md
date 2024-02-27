@@ -36,6 +36,6 @@ python main.py
 
 The application consists of three main modules:
 
-> main.py: This is the entry point of the application.
-> diary_entries.py: This module contains the functions for creating and editing diary entries.
-> search_entries.py: This module contains the function for reviewing a diary entry.
+1. main.py: This is the entry point of the application.
+2. diary_entries.py: This module contains the functions for creating and editing diary entries.
+3. search_entries.py: This module contains the function for reviewing a diary entry.
