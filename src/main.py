@@ -37,14 +37,17 @@ def options(name):
 
     print("""
 1) writing a new diary.
-2) deleting a diary
 3) reviewing a diary
-4) editing a diaryss""")
+4) editing a diary""")
     option = int(input("> your option here : "))
     if option == 1:
         diary_entries.new_diary(file, path)
 
+
     elif option == 3:
         search_entries.review_diary(file, path)
+
+    elif option == 4:
+        diary_entries.edit_diary(file,path)
 
 main()
