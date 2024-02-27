@@ -1,5 +1,7 @@
 import os
 from datetime import datetime
+from tkinter import *
+from tkinter import ttk
 
 def new_diary(filename, path):
     filename = input("Please enter a file name where you want everything to be inserted: ")

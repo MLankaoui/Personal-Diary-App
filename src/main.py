@@ -1,4 +1,6 @@
 import diary_entries, search_entries
+from tkinter import *
+from tkinter import ttk, Tk
 
 
 file = ""
@@ -6,7 +8,14 @@ path = ""
 
 
 def main():
-    print("welcome to the personal diary app")
+    root = Tk()
+    root.title = "Personal Diary App"
+    frm = ttk.Frame(root, padding=10)
+    frm.grid()
+    lbl = ttk.Label(frm, text="Welcome to the Personal Diary App", font=("Arial", 54), foreground="blue",  anchor="center", justify="center")
+    lbl.grid(column=0, row=0)
+
+    root.mainloop()
 
     print("============================")
 
